@@ -1,0 +1,50 @@
+.list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+    gap: 15px;
+  justify-content: space-between;
+}
+.record{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.feelingText{
+margin: 0px 0 0 15px;
+}
+.Emo{
+width: 50px;
+margin: 0;
+padding: 0;
+}
+.deleteBtn{
+  padding: 10px 15px;
+  font-size: 17px;
+  background-image: none;
+  background-color: var(--blueColor);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* Responsive */
+@media(max-width:1200px){
+.deleteBtn{
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.Emo{
+  width: 40px;
+}
+.feelingText{
+  font-size: 20px;
+}
+}
+@media(max-width:768px){
+.feelingText{
+  font-size: 18px;
+}
+.Emo{
+  width: 40px;
+}
+}
