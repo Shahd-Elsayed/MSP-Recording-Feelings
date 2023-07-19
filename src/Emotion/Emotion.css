@@ -1,0 +1,28 @@
+.Emoji{
+    width: 50px;
+    margin: 0;
+    border: none;
+    padding: 2px;
+    margin-right: 12px;
+  }
+  .emojibtn{
+    padding: 0;
+    display: none;
+  }
+  .emojibtn:checked + label .Emoji{
+  outline: var(--blueColor) solid 3px;
+  border-radius: 50px;
+  }
+  /* Responsive */
+@media(max-width:1200px){
+    .Emoji{
+        width: 45px;
+    }
+}
+@media(max-width:768px){
+    .Emoji{
+        width: 40px;
+        padding: 2px;
+        margin-right: 10px;
+    }
+}

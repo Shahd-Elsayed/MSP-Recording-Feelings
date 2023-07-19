@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fleur+De+Leah&family=Playfair+Display:ital,wght@1,500&display=swap');
+*{
+  background-image: linear-gradient(150deg,var(--background-color1), var(--background-color2),var(--background-color3),var(--background-color4),var(--background-color5) );
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header style */
+.App-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 40px 18px 40px;
+}
+.title{
+  font-family: 'Bungee', cursive;
+  font-size: 45px;
+  font-weight: 500;
+}
+.logo{
+  width: 70px;
+}
+/* App content style */
+.App-content{
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  padding: 30px;
+}
+/* First Section Style */
+.inputText{
+ padding: 20px;
+ margin-bottom: 20px;
+ outline: none;
+ background-color: #5751c0;
+ background-image: none;
+ opacity: 0.78;
+ font-size: 20px;
+ border: none;
+ border-radius: 50px;
+ width: 500px;
+}
+.selectEmoji{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Emojis{
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+.RecordBtn{
+  padding: 15px 20px;
+  font-size: 20px;
+  background-image: none;
+  background-color: var(--blueColor);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.mainImg{
+  width: 550px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Second Section Style */
+.secondSection{
+  overflow-y: scroll;
+  border: var(--blueColor) solid;
+  border-radius:20px;
+  border-width: 2px;
+  width: 500px;
+  height: 350px;
+  padding: 30px;
+}
+/* Responsive */
+@media(max-width:1200px){
+  .App-header{
+    padding: 30px 15vw 0px  15vw;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .mainImg{
+    width: 300px;
+  }
+  .App-content{
+    display:block;
+    padding: 0 15vw;
+  }
+  .inputText {
+    padding: 20px;
+    font-size: 17px;
+  }
+  .RecordBtn{
+    font-size: 18px;
+  }
+  .selectEmoji{
+    display: flex;
+    gap: 140px;
+    justify-content: flex-start;
+  }
+  .secondSection{
+    padding: 20px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 30vh;
+  }
+}
+@media(max-width:768px){
+  .App-header{
+    padding: 30px 25px 20px 25px;
+  }
+  .logo{
+    width: 60px;
+  }
+  .title{
+    font-size: 22px;
+  }
+  .App-content{
+    display:block;
+    padding: 0px 25px 10px 25px;
+  }
+  .inputText {
+    width: 80vw;
+    padding: 15px;
+    font-size: 16px;
+  }
+  .selectEmoji{
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .secondSection{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80vw;
+  }
+  .RecordBtn{
+    padding: 10px 15px;
+    font-size: 16px;
+
+  }
+  .mainImg{
+    width: 200px;
+  }
+}
