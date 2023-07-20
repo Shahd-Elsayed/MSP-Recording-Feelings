@@ -12,6 +12,7 @@
 }
 .feelingText{
 margin: 0px 0 0 15px;
+line-break: anywhere;
 }
 .Emo{
 width: 50px;
